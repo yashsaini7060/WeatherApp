@@ -17,7 +17,7 @@ function Search({setSearchLocations}) {
       }
     }, 500);
     return () => clearTimeout(timeoutId);
-  }, [inputValue]);
+  }, [inputValue, setSearchLocations]);
 
 
 
