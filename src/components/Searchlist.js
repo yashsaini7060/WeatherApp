@@ -16,7 +16,7 @@ const Searchlist = ({ data, setLocationCoordinates, setSearchViewToggle, setSear
         <p className="item-title">{data?.name}</p>
         <p className="label-2 item-subtitle">{data?.state}, {data?.country}</p>
       </div>
-      <a href="" className="item-link has-state" data-search-toggler></a>
+      <a href="./" className="item-link has-state" data-search-toggler>&nbsp;</a>
     </li>
   );
 };
