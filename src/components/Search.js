@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { featchInputResult } from '../helper/inputResult';
-// import useDebounce from '../hooks/useDebounce';
 
 function Search({setSearchLocations}) {
 
   const [inputValue, setInputValue] = useState("");
   const handleInputChange = (event) => {
+    event.preventDefault()
     setInputValue(event.target.value);
   };
 
