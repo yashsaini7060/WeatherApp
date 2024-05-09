@@ -4,9 +4,9 @@ import CurrentWeather from './CurrentWeather';
 import Forcast from './Forcast';
 import Highlights from './Highlights';
 import HourlyForecast from './Hourlyforecast';
+
 function Main({currWeather, forecastWeather, airPollution}) {
   const forcastlist = forecastWeather?.list;
-  console.log(currWeather);
   return (
     <main>
       <article className="container" data-container>
@@ -63,4 +63,4 @@ function Main({currWeather, forecastWeather, airPollution}) {
   )
 }
 
-export default Main
+export default Main;

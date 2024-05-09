@@ -1,11 +1,12 @@
 import React from 'react';
 
-const Searchlist = ({ data, setLocationCoordinates, setSearchViewToggle }) => {
+const Searchlist = ({ data, setLocationCoordinates, setSearchViewToggle, setSearchLocations }) => {
   const handleClick = (event) => {
-    event.preventDefault()
+    event.preventDefault();
     const newcoordinates = { lat: data.lat, lon: data.lon };
     setSearchViewToggle(false);
     setLocationCoordinates(newcoordinates);
+    setSearchLocations([]);
   };
 
   return (

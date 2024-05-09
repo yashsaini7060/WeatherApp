@@ -100,4 +100,4 @@ function Highlights({currWeather, airPollution}) {
   )
 }
 
-export default Highlights
+export default Highlights;

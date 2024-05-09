@@ -13,7 +13,6 @@ function Search({setSearchLocations}) {
     const timeoutId = setTimeout(async () => {
       const data = await featchInputResult(inputValue);
       if(data.status!=="error"){  
-        console.log(data)
       setSearchLocations(data);
       }
     }, 500);

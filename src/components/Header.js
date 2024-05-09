@@ -14,6 +14,7 @@ function Header({ setLocationCoordinates }) {
   }
 
   const setSearchLocations = (locations) => {
+    console.log(locations.data)
     setLocations(locations.data);
   }
 
@@ -48,11 +49,9 @@ function Header({ setLocationCoordinates }) {
 
           <div className={`search-result ${searchLocations?.length > 0 ? 'active' : ''}`} data-search-result>
             <ul className="view-list" data-search-list>
-              {/* {searchLocations && searchLocations.map((data, index) => {
-                return <Searchlist data={data}  setLocationCoordinates={setLocationCoordinates} setSearchViewToggle={setSearchViewToggle} />
-              })} */}
+
               {searchLocations && searchLocations.map((data, index) => {
-                return <Searchlist key={index} data={data} setLocationCoordinates={setLocationCoordinates} setSearchViewToggle={setSearchViewToggle} />
+                return <Searchlist key={index} data={data} setLocationCoordinates={setLocationCoordinates} setSearchViewToggle={setSearchViewToggle} setSearchLocations={setSearchLocations} />
               })}
 
             </ul>
@@ -82,4 +81,4 @@ function Header({ setLocationCoordinates }) {
   )
 }
 
-export default Header
+export default Header;

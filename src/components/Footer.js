@@ -1,5 +1,5 @@
-import React from 'react'
-import openWeather from "../assets/images/openweather.png"
+import React from 'react';
+import openWeather from "../assets/images/openweather.png";
 function Footer() {
   return (
     <footer className="footer">
@@ -15,4 +15,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default Footer;

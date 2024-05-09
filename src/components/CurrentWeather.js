@@ -1,14 +1,8 @@
-import React from 'react'
-// import d from "../assets/images/weather_icons/01d.png"
-
-import { WeatherIcons } from '../helper/module'
-
-import { getDate } from '../helper/module'
-// import {}
+import React from 'react';
+import { WeatherIcons } from '../helper/module';
+import { getDate } from '../helper/module';
 
 function CurrentWeather({currWeather}) {
-
-
 
   return (
     <section
@@ -48,4 +42,4 @@ function CurrentWeather({currWeather}) {
   )
 }
 
-export default CurrentWeather
+export default CurrentWeather;

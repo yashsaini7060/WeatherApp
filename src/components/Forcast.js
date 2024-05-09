@@ -29,5 +29,5 @@ function Forcast({data}) {
   )
 }
 
-export default Forcast
+export default Forcast;
 
